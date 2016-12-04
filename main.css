@@ -5,21 +5,34 @@ body{
 }
 
 header{
-	background:#3498db;
+	background:#fff;
 	width:100%;
 	height: 400px;
 	padding: 40px 0;
 	color: white;
 	text-align: center;
 	margin-bottom: 0px;
-	font-size:40px;
-	font-weight: bold;
+	font-size: 30px;
+	line-height: 0.5em;
 }
+
+nav{
+	padding:0px;
+	
+	position: fixed;
+    	top:0px;
+    	width:100%;
+        box-sizing: border-box;
+
+
+}
+
 nav ul, section ul{
-	background:#3498db;
+	background:#3498db ;
+	
 	overflow: hidden;
 	color: white;
-	padding: 0;
+	padding: 0px;
 	text-align: center;
 	margin: 0px;
     -webkit-transition: max-height 0.4s;
@@ -37,7 +50,8 @@ nav ul li, section ul li{
 	font-size: 16px;
 }
 nav ul li:hover{
-    background-color:#2880b9 ;
+    background:#2980b9;
+    border-radius: 5px;
 }
 a{
 	text-decoration: none;
@@ -47,10 +61,12 @@ section{
 	line-height: 1.5em;
 	font-size: 1em;
 	padding: 40px;
-	width:90%;
+	width:100%;
+	height:500px;
 	margin:0px auto;
 	color:#444;
 	text-align:center;
+	box-sizing: border-box;
 }
 p{
 	width:80%;
@@ -63,12 +79,23 @@ section h1{
 	text-align:center;
 	font-weight: bold;
 	font-size: 40px;
-	color:#000;
+	color:#fff;
 }
 section ul{
     padding:0px;
 	background-color: white;
 	color:#000;
+}
+#sectionabout{
+	background-color: #e74c3c;
+	
+}
+#sectioncontact{
+	background-color: #95a5a6;
+
+}
+#sectioncontact h1{
+	color:#fff;
 }
 section ul li{
 	padding: 80px;
@@ -87,32 +114,41 @@ section ul li{
     display:none;
     font-weight: bold;
 }
-#sectioncontactus{
-	background-color: #e74c3c;
 
+footer{
+	margin:0px auto;
+	width:100%;
+	padding:10px;
+	box-sizing: border-box;
+	text-align: center;
+	color:#7f8c8d;
+	background-color: #ecf0f1;
+	font-size: 16px;
+	font-weight: bold;
 }
-#sectioncontactus h1{
-	color:#fff;
-}
-
 
 @media screen and (max-width:780px){
+
 	body{
 		margin:0px;
 		padding:0px;
 		font-family: sans-serif;
 	}
    nav ul{
-   	max-height: 0;
+   	display:none;
+   	padding:0px;
    }
-   .showing{
-   	max-height: 20em;
-   }
+  
    nav ul li{
+   	margin:0px;
    	width:100%;
    	box-sizing: border-box;
    	padding: 15px;
    	text-align:left;
+
+   }
+   nav ul li:hover{
+   	background:#3498db;
    }
 
    .handle{
@@ -136,5 +172,11 @@ section ul li{
    	text-align: center;
    	
    }
+	nav:hover ul{
+           display: block;
+	}
+	nav:hover .handle{
+		display: none;
+	}
 
 }
