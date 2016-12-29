@@ -1,2 +1,2 @@
-# ResponsiveWebSite
-One page responsive website 
+# ResponsiveWebDesign
+
